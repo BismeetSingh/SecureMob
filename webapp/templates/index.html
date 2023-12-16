@@ -33,7 +33,7 @@
         var checkboxes = document.querySelectorAll('input[name]:checked');
         checkboxes.forEach(function(checkbox) {
           var categoryCommand = checkbox.value;
-          var [title, command] = categoryCommand.split('-'); // Split category and command
+          var [title, command] = categoryCommand.split('-');
           var value = checkbox.parentElement.querySelector('.value-block').innerText;
           selectedCommands.push({
             title,
