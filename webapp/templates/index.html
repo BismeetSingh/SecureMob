@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Command Selector</title>
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet">
     <style>
       .value-block {
@@ -18,41 +17,39 @@
   <body>
     <div class="container mt-5">
       <h1 class="text-center">Available Commands</h1>
-      <form id="commandForm">
-        {% for category, commands in commands.items() %}
-          <div class="mb-4">
-            <h2 class="mb-3">{{ category }}</h2>
-            {% for command, value in commands.items() %}
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="{{ category }}[]" value="{{ command }}" id="{{ category }}-{{ command }}">
-                <label class="form-check-label" for="{{ category }}-{{ command }}">
-                  {{ command }}: <span class="value-block">{{ value }}</span>
-                </label>
-              </div>
-            {% endfor %}
-          </div>
-        {% endfor %}
-        <button type="button" class="btn btn-primary mb-3" onclick="exportCommands()">Export Selected Commands</button>
+      <form id="commandForm"> {% for category, commands in commands.items() %} <div class="mb-4">
+          <h2 class="mb-3">{{ category }}</h2> {% for command, value in commands.items() %} <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="{{ category }}[]" value="{{ command }}" id="{{ category }}-{{ command }}">
+            <label class="form-check-label" for="{{ category }}-{{ command }}">
+              {{ command }}: <span class="value-block">{{ value }}</span>
+            </label>
+          </div> {% endfor %}
+        </div> {% endfor %} <button type="button" class="btn btn-primary mb-3" onclick="exportCommands()">Export Selected Commands</button>
       </form>
     </div>
     <script>
       function exportCommands() {
-        var selectedCommands = {};
+        var selectedCommands = [];
         var checkboxes = document.querySelectorAll('input[name]:checked');
         checkboxes.forEach(function(checkbox) {
-          var category = checkbox.getAttribute('name').replace(/\[\]$/, '');
-          var command = checkbox.value;
-          if (!selectedCommands[category]) {
-            selectedCommands[category] = [];
-          }
-          selectedCommands[category].push(command);
+          var categoryCommand = checkbox.value;
+          var [title, command] = categoryCommand.split('-'); // Split category and command
+          var value = checkbox.parentElement.querySelector('.value-block').innerText;
+          selectedCommands.push({
+            title,
+            command,
+            value
+          });
         });
+        var formattedCommands = {
+          commands: selectedCommands
+        };
         fetch('/export', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(selectedCommands)
+          body: JSON.stringify(formattedCommands)
         }).then(response => response.json()).then(data => {
           if (data.success) {
             alert('Selected commands exported successfully!');
