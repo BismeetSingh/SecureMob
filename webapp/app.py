@@ -53,7 +53,9 @@ def login_required(f):
 
     return decorated_function
 
-#JSON Exporter
+
+# JSON Exporter
+
 
 def generate_commands(commands_list, commands_json):
     output = {}
@@ -128,7 +130,7 @@ def add_member():
     email = request.form["email"]
     options = []
     for i in request.form:
-        if i not in ("name","email","member_id"):
+        if i not in ("name", "email", "member_id"):
             options.append(i)
     options = ",".join(options)
     date_of_joining = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -164,7 +166,7 @@ def edit_member():
     email = request.form["email"]
     options = []
     for i in request.form:
-        if i not in ("name","email","member_id"):
+        if i not in ("name", "email", "member_id"):
             options.append(i)
     options = ",".join(options)
     db.execute(
@@ -187,7 +189,7 @@ def member_info(id):
     lst = x.split(",")
     result = generate_commands(lst, commands_data)
     with open("selected_commands.json", "w") as outfile:
-        json.dump(result,outfile, indent=2)
+        json.dump(result, outfile, indent=2)
     return render_template("member_info.html", info=info, lst=lst)
 
 
