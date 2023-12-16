@@ -1,0 +1,32 @@
+name: SecureXccess
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  http: ^0.13.5
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  barcode_scan2: ^4.2.1
+  flutter_secure_storage: ^6.0.0
+  cryptography: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
