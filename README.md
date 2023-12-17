@@ -12,6 +12,8 @@ This repo consists of 3 folders:
 
 You can go through the components in the above mentioned order. Each folder is a whole project in itself and has its own documentation in the README.
 
+[Presentation Link](https://docs.google.com/presentation/d/1M6D3l91h6PDuemY7bpGrdTEvX0cU2Q8kbmU1xGB4f3Y/edit?usp=sharing)
+
 ## Use cases of SecMob
 
 1. Since SecMob has commands predefined, no action except them can be performed by the user. Thus the risk of user mishaps in sensitive environments is eliminated
