@@ -1,3 +1,12 @@
 {
-  "StartNodeApplication": "pm2 start <app.js>"
+  "InitializeNewProject": "yarn init",
+  "InstallPackageLocally": "yarn add <package-name>",
+  "InstallPackageGlobally": "yarn global add <package-name>",
+  "InstallPackagesFromPackageJson": "yarn install",
+  "StartNodeApplication": "pm2 start <app.js>",
+  "RunScriptFromPackageJson": "yarn run <script-name>",
+  "UpdatePackageToLatestVersion": "yarn upgrade <package-name>",
+  "ListInstalledPackages": "yarn list",
+  "RemovePackage": "yarn remove <package-name>",
+  "SearchForPackages": "yarn search <keyword>"
 }
