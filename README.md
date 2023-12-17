@@ -1,4 +1,4 @@
-SecMob facilitates executing predefined commands on a server via a REST API.
+# SecMob facilitates executing predefined commands on a server via a REST API.
 
 ## Basic Idea of SecMob
 
@@ -21,6 +21,7 @@ This repo consists of 3 folders:
 - `webapp`: An HTML GUI for admins to manage SecMob
 
 You can go through the components in the above mentioned order. Each folder is a whole project in itself and has its own documentation in the README.
+[Backend Repo](https://github.com/WilfredAlmeida/SecMob-Backend/tree/main)
 
 [Presentation Link](https://docs.google.com/presentation/d/1M6D3l91h6PDuemY7bpGrdTEvX0cU2Q8kbmU1xGB4f3Y/edit?usp=sharing)
 
