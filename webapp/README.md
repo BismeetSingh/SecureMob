@@ -24,13 +24,13 @@ This demo Flask application is designed for SysAdmin to manage a member database
 1. Clone the repository:
   
   ```bash
-  git clone https://github.com/BismeetSingh/SecureXAccess
+  git clone https://github.com/BismeetSingh/SecureMob
   ```
   
 2. Change directory to webapp
   
   ```bash
-  cd SecureXAccess/webapp
+  cd SecureMob/webapp
   ```
   
   3. Install the required dependencies:
