@@ -54,48 +54,65 @@ This demo Flask application is designed for SysAdmin to manage a member database
 
 The application has a simple login system. SysAdmin need to provide a valid username and password.
 
-![snap 1png](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(1).png?msec=1702776726244)
+![snap (1)](https://github.com/BismeetSingh/SecureMob/assets/83116240/454c66ef-80b6-4444-912a-105af1c7b028)
+
 
 ### Members
 
 - The main page (`/members`) displays a list of members.
 - Members can be searched using the search bar.
 - Recent members are displayed by default.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(10).png?msec=1702776999585)
+
+![snap (10)](https://github.com/BismeetSingh/SecureMob/assets/83116240/968df2f9-2c22-48ed-bfc8-f5cf0f19a5f4)
+
 
 ### Adding a Member
 
 - Click the "Add Member" button on the main page.
 - Fill in the required information (Name, Email) and select permissions.
 - Click "Add Member" to save the new member.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(2).png?msec=1702776750916)
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(3).png?msec=1702776757140)
+
+![snap (2)](https://github.com/BismeetSingh/SecureMob/assets/83116240/b143f810-3aed-4938-ae76-7ed0c8c2f671)
+![snap (3)](https://github.com/BismeetSingh/SecureMob/assets/83116240/16e69bc1-9a68-4555-9b11-0e35b68647f8)
+
+
+
 
 ### Editing a Member
 
 - Click the "Edit" button next to a member on the main page.
 - Update the member's information and permissions.
 - Click "Edit Member" to save the changes.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(6).png?msec=1702776780809)
+
+![snap (6)](https://github.com/BismeetSingh/SecureMob/assets/83116240/368f1b94-0790-402a-86eb-05ffaf00504e)
+
 
 ### Deleting a Member
 
 - Click the "Delete" button next to a member on the main page.
 - A confirmation modal will appear.
 - Click "Delete" to remove the member.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(7).png?msec=1702776790877)
+
+![snap (7)](https://github.com/BismeetSingh/SecureMob/assets/83116240/c2c68bfe-be9b-4fd6-844d-b0f09dd6fd89)
+
 
 ### Member Information
 
 - Click on a member's name to view detailed information.
 - The member's ID, name, email, date of joining, and permissions are displayed.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(5).png?msec=1702776799525)
+
+![snap (5)](https://github.com/BismeetSingh/SecureMob/assets/83116240/75003926-567c-4ff4-a856-eafdc42d84ad)
+
 
 ## JSON Export
 
 - The application allows users to export selected member commands to a JSON file.
 - Select the desired commands and click the "Export" button.
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(9).png?msec=1702776927177)
+
+![snap (9)](https://github.com/BismeetSingh/SecureMob/assets/83116240/8254e064-ec42-46f8-82cf-5ede35f96805)
+
 
 ## Search Support
-![](file://C:\Users\Administrator\Desktop\SecureXcess\webapp\screenshots\snap%20(8).png?msec=1702776927177)
+
+![snap (8)](https://github.com/BismeetSingh/SecureMob/assets/83116240/0751eab4-470c-494b-8c57-2510ddf8810c)
+
