@@ -4,7 +4,7 @@ SecMob facilitates executing predefined commands on a server via a REST API.
 
 Executable commands are predefined on the server in a format (JSON in this case). These commands are parsed by the backend system and sent over to the client via a REST API. The client receives randomly unique IDs of the commands and requests execution of the commands by sending back the ID to the server. The server executed the command defined on its end and returns the result to the client. The communication between the client and server is encrypted using AES-256-GCM and optional SSL.
 
-<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/d39766fa-4507-419d-9da0-6eb85f6b5967' height=400 width=400 />
+<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/d39766fa-4507-419d-9da0-6eb85f6b5967' />
 
 
 ## Navigating this Repo
