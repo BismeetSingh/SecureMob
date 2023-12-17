@@ -8,8 +8,8 @@ Executable commands are predefined on the server in a format (JSON in this case)
 
 ## Mobile View
 
-<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/625765c2-3dad-4172-af46-002bb70b3069' height =200 width=200 />
-<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/0e57d9e5-04a5-491e-a0b2-c6bc319f9030' height=200 width=200 />
+<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/625765c2-3dad-4172-af46-002bb70b3069' height =400 width=200 />
+<img src='https://github.com/BismeetSingh/SecureMob/assets/13601266/0e57d9e5-04a5-491e-a0b2-c6bc319f9030' height=400 width=200 />
 
 
 
